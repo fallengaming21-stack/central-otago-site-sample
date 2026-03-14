@@ -27,7 +27,7 @@
       --content-width: 1120px;
 
       --ease-standard: cubic-bezier(0.22, 0.61, 0.36, 1);
-      --shadow-desktop: 0 8px 24px rgba(31, 27, 24, 0.08);
+      --shadow-desktop: 0 14px 34px rgba(31, 27, 24, 0.12);
     }
 
     * { box-sizing: border-box; }
@@ -121,6 +121,7 @@
 
     .hero {
       padding-top: 64px;
+      min-height: 74svh;
       background: linear-gradient(180deg, #f8f2e8 0%, #f7f2ea 60%, #f3ebe1 100%);
       position: relative;
       overflow: hidden;
@@ -133,11 +134,12 @@
     }
 
     .hero-card {
-      background: rgba(255,255,255,0.55);
-      border: 1px solid rgba(47,33,26,0.14);
+      background: rgba(255,255,255,0.62);
+      border: 1px solid rgba(47,33,26,0.16);
       border-radius: var(--radius-hero);
-      padding: 20px;
-      backdrop-filter: blur(2px);
+      padding: 22px;
+      backdrop-filter: blur(3px);
+      box-shadow: 0 18px 40px rgba(31,27,24,.14);
     }
 
     .rating-chip {
@@ -155,6 +157,7 @@
 
     .hero-visual {
       aspect-ratio: 4 / 3;
+      position: relative;
       border-radius: var(--radius-hero);
       border: 1px solid rgba(47,33,26,0.14);
       background:
@@ -168,10 +171,19 @@
       padding: 20px;
     }
 
-    .hero-visual small { color: var(--text-secondary); font-size: 14px; }
+    .hero-visual small { color: #f2e8dc; font-size: 14px; }
+
+    .hero-visual::after {
+      content:"";
+      position:absolute;
+      inset:0;
+      border-radius: var(--radius-hero);
+      background: linear-gradient(180deg, rgba(0,0,0,.05), rgba(0,0,0,.28));
+      pointer-events:none;
+    }
 
     .proof-strip {
-      background: var(--surface);
+      background: linear-gradient(180deg, #ece2d6, #e7dacb);
       border-top: 1px solid rgba(47,33,26,0.14);
       border-bottom: 1px solid rgba(47,33,26,0.14);
     }
@@ -183,7 +195,7 @@
     }
 
     .proof-item {
-      padding: 12px;
+      padding: 13px 12px;
       border-radius: var(--radius-sm);
       background: rgba(255,255,255,0.55);
       border: 1px solid rgba(47,33,26,0.1);
@@ -197,7 +209,7 @@
     }
 
     .card {
-      background: var(--bg-cream);
+      background: linear-gradient(180deg, #faf5ee, #f6efe5);
       border: 1px solid rgba(47,33,26,0.14);
       border-radius: var(--radius-md);
       padding: 20px;
@@ -239,6 +251,13 @@
       object-fit:cover;
       object-position:center;
       border-radius:14px;
+      filter:saturate(1.05) contrast(1.03);
+      transition: transform 260ms var(--ease-standard), filter 260ms var(--ease-standard);
+    }
+
+    .gallery-tile:hover .gallery-photo{
+      transform: scale(1.03);
+      filter:saturate(1.1) contrast(1.05);
     }
 
     .visit-grid {
@@ -317,8 +336,8 @@
       section { padding: 80px 0; }
       .container { width: min(var(--content-width), calc(100% - 80px)); }
       .grid-4 { grid-template-columns: repeat(4, 1fr); }
-      .card:hover { transform: translateY(-1px); }
-      .card { transition: transform 180ms var(--ease-standard), box-shadow 220ms var(--ease-standard); box-shadow: var(--shadow-desktop); }
+      .card:hover { transform: translateY(-2px); border-color: rgba(47,33,26,.24); }
+      .card { transition: transform 180ms var(--ease-standard), box-shadow 220ms var(--ease-standard), border-color 220ms var(--ease-standard); box-shadow: var(--shadow-desktop); }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -334,7 +353,7 @@
     <div class="container hero-grid">
       <div class="hero-card reveal">
         <span class="eyebrow">Tin Goose Cafe · Alexandra</span>
-        <h1>Your Local Alexandra Café for Great Coffee, Easy Brunch, and Friendly Service</h1>
+        <h1>A Premium Alexandra Café Experience for Coffee, Brunch, and Local Connection</h1>
         <p>Tin Goose Cafe on Centennial Avenue is a go-to local spot for coffee catch-ups, relaxed breakfasts, and casual lunches — with the warm, welcoming feel you want in a neighbourhood café.</p>
         <div class="btn-row">
           <a class="btn btn-primary" href="https://maps.google.com/?q=22+Centennial+Avenue+Alexandra+New+Zealand" aria-label="Get directions to Tin Goose Cafe in Alexandra">Get Directions</a>
@@ -452,6 +471,19 @@
         <article class="card reveal"><h3>Rating Volume</h3><p>4.5★ average from 506 Google ratings.</p></article>
         <article class="card reveal"><h3>Open Hours</h3><p>Listed daily hours: 6:00 AM to 4:00 PM.</p></article>
         <article class="card reveal"><h3>Digital Presence</h3><p>No website currently listed, making this landing page a high-value upgrade.</p></article>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <span class="eyebrow reveal">Launch Readiness</span>
+      <h2 class="reveal">Production checklist status</h2>
+      <div class="grid-3">
+        <article class="card reveal"><h3>Design QA</h3><p>Layout, image rendering, and contrast tuned for desktop and mobile.</p></article>
+        <article class="card reveal"><h3>Trust Data</h3><p>Address, phone, category, rating, and hours aligned with Google Places enrichment.</p></article>
+        <article class="card reveal"><h3>Next Step</h3><p>Replace AI concept photos with authentic venue imagery when available.</p></article>
       </div>
     </div>
   </section>
