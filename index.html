@@ -71,7 +71,7 @@
       line-height: 1.15;
     }
 
-    h1 { font-size: clamp(2.1rem, 5.2vw, 2.75rem); letter-spacing: -0.01em; }
+    h1 { font-size: clamp(1.85rem, 4.2vw, 2.35rem); letter-spacing: -0.01em; }
     h2 { font-size: clamp(1.75rem, 4.2vw, 2.15rem); }
     h3 { font-size: clamp(1.25rem, 3vw, 1.5rem); }
 
@@ -131,8 +131,8 @@
     .btn-secondary:hover { background: rgba(47,33,26,0.06); transform: translateY(-1px); }
 
     .hero {
-      padding-top: 34px;
-      min-height: 62svh;
+      padding-top: 18px;
+      min-height: auto;
       background: linear-gradient(180deg, #f8f2e8 0%, #f7f2ea 60%, #f3ebe1 100%);
       position: relative;
       overflow: hidden;
@@ -140,7 +140,7 @@
 
     .hero-grid {
       display: grid;
-      gap: 18px;
+      gap: 14px;
       align-items: center;
     }
 
@@ -148,7 +148,7 @@
       background: rgba(255,255,255,0.62);
       border: 1px solid rgba(47,33,26,0.16);
       border-radius: var(--radius-hero);
-      padding: 22px;
+      padding: 18px;
       backdrop-filter: blur(3px);
       box-shadow: 0 18px 40px rgba(31,27,24,.14);
     }
@@ -183,15 +183,6 @@
     }
 
     .hero-visual small { color: #f2e8dc; font-size: 14px; }
-
-    .hero-visual::after {
-      content:"";
-      position:absolute;
-      inset:0;
-      border-radius: var(--radius-hero);
-      background: linear-gradient(180deg, rgba(0,0,0,.05), rgba(0,0,0,.28));
-      pointer-events:none;
-    }
 
     .proof-strip {
       background: linear-gradient(180deg, #ece2d6, #e7dacb);
@@ -341,7 +332,7 @@
     @media (max-width: 720px){ .mobile-cta{display:flex;} body{padding-bottom:76px;} }
 
     @media (min-width: 700px) {
-      section { padding: 64px 0; }
+      section { padding: 56px 0; }
       .container { width: min(var(--content-width), calc(100% - 56px)); }
       .proof-items { grid-template-columns: repeat(3, 1fr); }
       .grid-3 { grid-template-columns: repeat(3, 1fr); }
@@ -352,7 +343,7 @@
     }
 
     @media (min-width: 1000px) {
-      section { padding: 80px 0; }
+      section { padding: 68px 0; }
       .container { width: min(var(--content-width), calc(100% - 80px)); }
       .grid-4 { grid-template-columns: repeat(4, 1fr); }
       .card:hover { transform: translateY(-2px); border-color: rgba(47,33,26,.24); }
@@ -449,12 +440,7 @@
         </div>
         <div class="rating-chip" aria-label="Google rating">⭐ Rated 4.5 on Google</div>
       </div>
-      <div class="hero-visual reveal" role="img" aria-label="Tin Goose Cafe interior concept image" style="background-image:linear-gradient(140deg, rgba(7,16,29,.20), rgba(7,16,29,.40)), url('assets/photos/cabinet.webp'); background-size:cover; background-position:center; color:#f7f2ea; text-shadow:0 2px 8px rgba(0,0,0,.55)">
-        <div>
-          <strong>Modern, cozy cafe atmosphere</strong>
-          <small>AI concept visual inspired by your selected style set</small>
-        </div>
-      </div>
+      <div class="hero-visual reveal" role="img" aria-label="Tin Goose Cafe exterior concept image" style="background-image:linear-gradient(140deg, rgba(7,16,29,.10), rgba(7,16,29,.22)), url('assets/photos/exterior.webp'); background-size:cover; background-position:center;"></div>
     </div>
   </header>
 
