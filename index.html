@@ -226,19 +226,19 @@
       border-radius: 16px;
       border: 1px solid rgba(47,33,26,0.14);
       background: linear-gradient(135deg, #ead8c3, #d8bea2);
-      display: grid;
-      place-items: center;
-      text-align: center;
-      color: var(--primary);
-      padding: 10px;
-      font-size: 14px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(31,27,24,.10);
     }
 
-
     .gallery-photo{
-      width:100%;height:100%;object-fit:cover;border-radius:14px;
-      border:1px solid rgba(47,33,26,0.14);
-      box-shadow: 0 6px 16px rgba(31,27,24,.10);
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center;
+      border-radius:14px;
     }
 
     .visit-grid {
@@ -342,7 +342,7 @@
         </div>
         <div class="rating-chip" aria-label="Google rating">⭐ Rated 4.5 on Google</div>
       </div>
-      <div class="hero-visual reveal" role="img" aria-label="Tin Goose Cafe interior concept image" style="background-image:linear-gradient(140deg, rgba(7,16,29,.18), rgba(7,16,29,.36)), url('assets/photos/hero.webp'); background-size:cover; background-position:center; color:#f7f2ea; text-shadow:0 2px 8px rgba(0,0,0,.55)">
+      <div class="hero-visual reveal" role="img" aria-label="Tin Goose Cafe interior concept image" style="background-image:linear-gradient(140deg, rgba(7,16,29,.20), rgba(7,16,29,.40)), url('assets/photos/cabinet.webp'); background-size:cover; background-position:center; color:#f7f2ea; text-shadow:0 2px 8px rgba(0,0,0,.55)">
         <div>
           <strong>Modern, cozy cafe atmosphere</strong>
           <small>AI concept visual inspired by your selected style set</small>
@@ -409,9 +409,9 @@
       <div class="gallery-grid">
         <div class="gallery-tile reveal"><img class="gallery-photo" src="assets/photos/hero.webp" alt="Cafe interior concept" loading="lazy"/></div>
         <div class="gallery-tile reveal"><img class="gallery-photo" src="assets/photos/coffee.webp" alt="Coffee and pastry concept" loading="lazy"/></div>
-        <div class="gallery-tile reveal"><img class="gallery-photo" src="assets/photos/cabinet.webp" alt="Cabinet and counter concept" loading="lazy"/></div>
         <div class="gallery-tile reveal"><img class="gallery-photo" src="assets/photos/brunch.webp" alt="Brunch table concept" loading="lazy"/></div>
         <div class="gallery-tile reveal"><img class="gallery-photo" src="assets/photos/exterior.webp" alt="Cafe exterior concept" loading="lazy"/></div>
+        <div class="gallery-tile reveal"><img class="gallery-photo" src="assets/photos/cabinet.webp" alt="Cabinet and counter concept" loading="lazy"/></div>
       </div>
     </div>
   </section>

@@ -135,3 +135,9 @@ Overall build quality is strong and close to spec. Layout, token usage, section 
 - Fixed: External hotlinked images replaced with local asset files under `assets/photos/`.
 - Fixed: Hero overlay contrast improved for headline readability.
 - Notes: Gallery now uses 5 curated visuals; no broken external dependencies.
+
+## Image QA hardening pass (2026-03-14)
+- Enforced fixed gallery crop behavior with absolute-positioned images inside aspect-ratio tiles.
+- Removed inconsistent image sizing artifacts (all gallery tiles now render uniform dimensions).
+- Switched hero background to a landscape source for cleaner headline composition.
+- Local assets confirmed loading with no broken links.
