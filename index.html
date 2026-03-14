@@ -115,6 +115,12 @@
       outline-offset: 2px;
     }
 
+    a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+      outline: 3px solid var(--accent-soft);
+      outline-offset: 2px;
+      border-radius: 8px;
+    }
+
     .btn-primary {
       background: var(--primary);
       color: var(--bg-cream);
@@ -324,7 +330,7 @@
     }
 
     
-    .mobile-cta{position:fixed;left:10px;right:10px;bottom:10px;z-index:90;display:none;gap:10px;background:rgba(7,18,35,.92);border:1px solid rgba(255,255,255,.15);padding:10px;border-radius:12px;backdrop-filter:blur(6px)}
+    .mobile-cta{position:fixed;left:10px;right:10px;bottom:max(10px, env(safe-area-inset-bottom));z-index:90;display:none;gap:10px;background:rgba(7,18,35,.92);border:1px solid rgba(255,255,255,.15);padding:10px;border-radius:12px;backdrop-filter:blur(6px)}
     .mobile-cta a{flex:1;text-align:center;padding:11px 10px;border-radius:10px;font-weight:700;text-decoration:none}
     .mobile-cta .call{background:var(--brand);color:#fff}
     .mobile-cta .dir{background:#fff;color:#1f1b18}
@@ -428,6 +434,17 @@
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <nav class="top-nav" aria-label="Primary">
+    <div class="container" style="display:flex;gap:14px;flex-wrap:wrap;padding:10px 0">
+      <a href="#main-content">Skip to content</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="tel:034485995">Call</a>
+      <a href="https://maps.google.com/?q=22+Centennial+Avenue+Alexandra+New+Zealand" target="_blank" rel="noopener noreferrer">Directions</a>
+    </div>
+  </nav>
+
   <header class="hero">
     <div class="container hero-grid">
       <div class="hero-card reveal">
@@ -435,7 +452,7 @@
         <h1>A Premium Alexandra Café Experience for Coffee, Brunch, and Local Connection</h1>
         <p>Tin Goose Cafe on Centennial Avenue is a go-to local spot for coffee catch-ups, relaxed breakfasts, and casual lunches — with the warm, welcoming feel you want in a neighbourhood café.</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href="https://maps.google.com/?q=22+Centennial+Avenue+Alexandra+New+Zealand" aria-label="Get directions to Tin Goose Cafe in Alexandra">Get Directions</a>
+          <a class="btn btn-primary" href="https://maps.google.com/?q=22+Centennial+Avenue+Alexandra+New+Zealand" target="_blank" rel="noopener noreferrer" aria-label="Get directions to Tin Goose Cafe in Alexandra">Get Directions</a>
           <a class="btn btn-secondary" href="tel:034485995" aria-label="Call Tin Goose Cafe on 03 448 5995">Call 03 448 5995</a>
         </div>
         <div class="rating-chip" aria-label="Google rating">⭐ Rated 4.5 on Google</div>
@@ -519,11 +536,11 @@
           <p><strong>Name:</strong> Tin Goose Cafe</p>
           <p><strong>Category:</strong> Cafe</p>
           <p><strong>Address:</strong> 22 Centennial Avenue, Alexandra</p>
-          <p><strong>Phone:</strong> <a href="tel:034485995">03 448 5995</a></p>
+          <p><strong>Phone:</strong> <a href="tel:034485995" aria-label="Call Tin Goose Cafe on 03 448 5995">03 448 5995</a></p>
           <p><strong>Opening hours:</strong> Mon–Sun: 6:00 AM – 4:00 PM</p>
           <p><strong>Parking/access:</strong> On-street and nearby parking in central Alexandra (confirm best spots with staff).</p>
           <div class="btn-row">
-            <a class="btn btn-primary" href="https://maps.google.com/?q=22+Centennial+Avenue+Alexandra+New+Zealand" aria-label="Open map directions to Tin Goose Cafe">Get Directions</a>
+            <a class="btn btn-primary" href="https://maps.google.com/?q=22+Centennial+Avenue+Alexandra+New+Zealand" target="_blank" rel="noopener noreferrer" aria-label="Open map directions to Tin Goose Cafe">Get Directions</a>
             <a class="btn btn-secondary" href="tel:034485995" aria-label="Phone Tin Goose Cafe before visiting">Phone Ahead</a>
           </div>
         </article>
@@ -569,7 +586,7 @@
       <h2>Ready for your next coffee break in Alexandra?</h2>
       <p>Conveniently located on Centennial Avenue — easy for locals, workers nearby, and travellers passing through town.</p>
       <div class="btn-row">
-        <a class="btn btn-primary" href="https://maps.google.com/?q=22+Centennial+Avenue+Alexandra+New+Zealand" aria-label="Plan your visit to Tin Goose Cafe in Alexandra" style="background:#F7F2EA;color:#2F211A;">Plan Your Visit</a>
+        <a class="btn btn-primary" href="https://maps.google.com/?q=22+Centennial+Avenue+Alexandra+New+Zealand" target="_blank" rel="noopener noreferrer" aria-label="Plan your visit to Tin Goose Cafe in Alexandra" style="background:#F7F2EA;color:#2F211A;">Plan Your Visit</a>
         <a class="btn btn-secondary" href="tel:034485995" aria-label="Call Tin Goose Cafe now" style="border-color:#F7F2EA;color:#F7F2EA;">Call 03 448 5995</a>
       </div>
     </div>
