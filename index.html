@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tin Goose Cafe Alexandra | Coffee, Brunch & Casual Dining</title>
   <meta name="description" content="Visit Tin Goose Cafe at 22 Centennial Avenue, Alexandra. Enjoy quality coffee, relaxed meals, and friendly local service. Call 03 448 5995." />
+  <meta property="og:title" content="Tin Goose Cafe Alexandra | Coffee, Brunch & Casual Dining" />
+  <meta property="og:description" content="Modern Alexandra cafe with 4.5★ from 506+ ratings. Coffee, brunch, and friendly local service." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fallengaming21-stack.github.io/central-otago-site-sample/" />
+  <meta property="og:image" content="https://fallengaming21-stack.github.io/central-otago-site-sample/assets/photos/hero.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tin Goose Cafe Alexandra" />
+  <meta name="twitter:description" content="Coffee, brunch, and casual dining in Alexandra." />
+  <meta name="twitter:image" content="https://fallengaming21-stack.github.io/central-otago-site-sample/assets/photos/hero.webp" />
+  <link rel="preload" as="image" href="assets/photos/cabinet.webp" />
+
   <style>
     .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
     .skip-link:focus{left:12px;top:12px;width:auto;height:auto;padding:10px 14px;background:#fff;color:#111;border-radius:8px;z-index:999}
@@ -321,6 +332,14 @@
       transform: translateY(0);
     }
 
+    
+    .mobile-cta{position:fixed;left:10px;right:10px;bottom:10px;z-index:90;display:none;gap:10px;background:rgba(7,18,35,.92);border:1px solid rgba(255,255,255,.15);padding:10px;border-radius:12px;backdrop-filter:blur(6px)}
+    .mobile-cta a{flex:1;text-align:center;padding:11px 10px;border-radius:10px;font-weight:700;text-decoration:none}
+    .mobile-cta .call{background:var(--brand);color:#fff}
+    .mobile-cta .dir{background:#fff;color:#1f1b18}
+
+    @media (max-width: 720px){ .mobile-cta{display:flex;} body{padding-bottom:76px;} }
+
     @media (min-width: 700px) {
       section { padding: 64px 0; }
       .container { width: min(var(--content-width), calc(100% - 56px)); }
@@ -346,6 +365,75 @@
       .reveal { opacity: 1; transform: none; }
     }
   </style>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Tin Goose Cafe",
+  "telephone": "03 448 5995",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "22 Centennial Avenue",
+    "addressLocality": "Alexandra",
+    "postalCode": "9320",
+    "addressCountry": "NZ"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "506"
+  },
+  "url": "https://fallengaming21-stack.github.io/central-otago-site-sample/",
+  "sameAs": [
+    "https://maps.google.com/?cid=2731913836006545641&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "6:00 AM",
+      "closes": "4:00 PM"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "6:00 AM",
+      "closes": "4:00 PM"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "6:00 AM",
+      "closes": "4:00 PM"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "6:00 AM",
+      "closes": "4:00 PM"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "6:00 AM",
+      "closes": "4:00 PM"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "6:00 AM",
+      "closes": "4:00 PM"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "6:00 AM",
+      "closes": "4:00 PM"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -453,11 +541,8 @@
             <a class="btn btn-secondary" href="tel:034485995" aria-label="Phone Tin Goose Cafe before visiting">Phone Ahead</a>
           </div>
         </article>
-        <aside class="map-placeholder reveal" aria-label="Map and review highlights">
-          <div>
-            <strong>Customer review themes</strong>
-            <p style="margin: 8px 0 0;">Customers frequently mention: friendly staff, cozy modern interior, fast service, quality coffee, and excellent scones/cheese rolls.</p>
-          </div>
+        <aside class="map-placeholder reveal" aria-label="Map and review highlights" style="padding:0;overflow:hidden">
+          <iframe title="Tin Goose Cafe map" src="https://www.google.com/maps?q=22+Centennial+Avenue+Alexandra+9320&output=embed" style="width:100%;height:100%;min-height:260px;border:0"></iframe>
         </aside>
       </div>
     </div>
@@ -552,5 +637,11 @@
       document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
     })();
   </script>
+
+  <div class="mobile-cta" aria-label="Quick actions">
+    <a class="call" href="tel:034485995" aria-label="Call Tin Goose Cafe">Call now</a>
+    <a class="dir" href="https://maps.google.com/?cid=2731913836006545641&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" aria-label="Open directions">Directions</a>
+  </div>
+
 </body>
 </html>
