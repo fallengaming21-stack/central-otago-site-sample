@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fallengaming21-stack.github.io/central-otago-site-sample/sitemap.xml
