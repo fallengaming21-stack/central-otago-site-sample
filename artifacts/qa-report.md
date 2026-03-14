@@ -127,3 +127,11 @@ Overall build quality is strong and close to spec. Layout, token usage, section 
 - Placeholder content currently blocks true production readiness.
 - Final perceived quality depends on photography quality and image optimization.
 - Unverified business details (hours/menu/access) may create trust friction if launched as-is.
+
+
+## QA rerun after image integration (2026-03-14)
+- Status: PASS (improved)
+- Fixed: CSS media-query corruption causing layout issues.
+- Fixed: External hotlinked images replaced with local asset files under `assets/photos/`.
+- Fixed: Hero overlay contrast improved for headline readability.
+- Notes: Gallery now uses 5 curated visuals; no broken external dependencies.
