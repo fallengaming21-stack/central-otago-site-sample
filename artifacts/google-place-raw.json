@@ -1,0 +1,143 @@
+{
+  "places": [
+    {
+      "id": "ChIJy4t8M1IjK6gR6Rgl2Ci16SU",
+      "nationalPhoneNumber": "03 448 5995",
+      "internationalPhoneNumber": "+64 3 448 5995",
+      "formattedAddress": "22 Centennial Avenue, Alexandra 9320, New Zealand",
+      "location": {
+        "latitude": -45.2544039,
+        "longitude": 169.39115579999998
+      },
+      "rating": 4.5,
+      "googleMapsUri": "https://maps.google.com/?cid=2731913836006545641&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "regularOpeningHours": {
+        "weekdayDescriptions": [
+          "Monday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM",
+          "Tuesday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM",
+          "Wednesday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM",
+          "Thursday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM",
+          "Friday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM",
+          "Saturday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM",
+          "Sunday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM"
+        ]
+      },
+      "userRatingCount": 506,
+      "displayName": {
+        "text": "Tin Goose Cafe",
+        "languageCode": "en"
+      },
+      "primaryTypeDisplayName": {
+        "text": "Cafe",
+        "languageCode": "en"
+      },
+      "reviews": [
+        {
+          "name": "places/ChIJy4t8M1IjK6gR6Rgl2Ci16SU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2toNmNIaE9XVU5NVTNVdE1GY3dWMlZCUTFaR1NXYxAB",
+          "relativePublishTimeDescription": "3 months ago",
+          "rating": 5,
+          "text": {
+            "text": "Beautiful.\n\nA modern expression of Alex, which is cultured by the people who live here.\n\nScandi vibes, but without the extremes of minimalism.\n\nComfortable, spacious and clean.\n\nPrices are very fair.\n\nThe team I witnessed are dedicated to serving and meeting the needs of their customers, with hypnotic grace and efficiency, whilst exuding joy and ease.\n\nOf course, there is always a whimsy and rose tinted bias of a first timer in an unfamiliar location - yet - attempting to pierce the balloon of charm and deflate it, I found that The Tin Goose is\n\na flowering fruit tree of Alex.",
+            "languageCode": "en"
+          },
+          "originalText": {
+            "text": "Beautiful.\n\nA modern expression of Alex, which is cultured by the people who live here.\n\nScandi vibes, but without the extremes of minimalism.\n\nComfortable, spacious and clean.\n\nPrices are very fair.\n\nThe team I witnessed are dedicated to serving and meeting the needs of their customers, with hypnotic grace and efficiency, whilst exuding joy and ease.\n\nOf course, there is always a whimsy and rose tinted bias of a first timer in an unfamiliar location - yet - attempting to pierce the balloon of charm and deflate it, I found that The Tin Goose is\n\na flowering fruit tree of Alex.",
+            "languageCode": "en"
+          },
+          "authorAttribution": {
+            "displayName": "Enoch YHVH",
+            "uri": "https://www.google.com/maps/contrib/115807876115289086814/reviews",
+            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWRIPc_GETUHitSbVkxm3ZZVmOqnpTsRhnId1_HwdE03GZW-cb2=s128-c0x00000000-cc-rp-mo-ba2"
+          },
+          "publishTime": "2025-11-22T21:47:59.751893890Z",
+          "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2toNmNIaE9XVU5NVTNVdE1GY3dWMlZCUTFaR1NXYxAB&d=17924085&t=1",
+          "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2toNmNIaE9XVU5NVTNVdE1GY3dWMlZCUTFaR1NXYxAB!2m1!1s0xa82b2352337c8bcb:0x25e9b528d82518e9"
+        },
+        {
+          "name": "places/ChIJy4t8M1IjK6gR6Rgl2Ci16SU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pFelVtWTJkRVl3V0ZkUk9VbHJSMmx6VG5adE5VRRAB",
+          "relativePublishTimeDescription": "6 months ago",
+          "rating": 5,
+          "text": {
+            "text": "This caf\u00e9 was a lovely surprise on our way to Dunedin. It\u2019s one of the few places open so early, and I was really impressed with the quality in every way.\n\nThe interior is cozy and beautifully decorated, and the staff were warm and welcoming \u263a\ufe0f\n\nI really appreciated being asked how much milk I wanted in my piccolo \u2014 it was perfect. Everything was excellent, and I\u2019d definitely recommend this caf\u00e9 without hesitation!",
+            "languageCode": "en"
+          },
+          "originalText": {
+            "text": "This caf\u00e9 was a lovely surprise on our way to Dunedin. It\u2019s one of the few places open so early, and I was really impressed with the quality in every way.\n\nThe interior is cozy and beautifully decorated, and the staff were warm and welcoming \u263a\ufe0f\n\nI really appreciated being asked how much milk I wanted in my piccolo \u2014 it was perfect. Everything was excellent, and I\u2019d definitely recommend this caf\u00e9 without hesitation!",
+            "languageCode": "en"
+          },
+          "authorAttribution": {
+            "displayName": "Jennifer",
+            "uri": "https://www.google.com/maps/contrib/112142270724980248607/reviews",
+            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUYJT_6RJPAgrsn3O4AHX2o3_8CRH5QfKxRy_ARIcxYWVwTCjD1=s128-c0x00000000-cc-rp-mo-ba4"
+          },
+          "publishTime": "2025-08-23T05:58:01.043325644Z",
+          "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2pFelVtWTJkRVl3V0ZkUk9VbHJSMmx6VG5adE5VRRAB&d=17924085&t=1",
+          "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pFelVtWTJkRVl3V0ZkUk9VbHJSMmx6VG5adE5VRRAB!2m1!1s0xa82b2352337c8bcb:0x25e9b528d82518e9"
+        },
+        {
+          "name": "places/ChIJy4t8M1IjK6gR6Rgl2Ci16SU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2psRlFXWlBNelY0ZGxSWmJYbFlkMmR2ZEdSWVZYYxAB",
+          "relativePublishTimeDescription": "a week ago",
+          "rating": 5,
+          "text": {
+            "text": "This place is always busy when we pass so decided to stop and we are pleased we did. Our coffee and scone were delicious and the service was amazing, within 10 minutes of ordering we had both in front of us. Stop here you won't regret it.",
+            "languageCode": "en"
+          },
+          "originalText": {
+            "text": "This place is always busy when we pass so decided to stop and we are pleased we did. Our coffee and scone were delicious and the service was amazing, within 10 minutes of ordering we had both in front of us. Stop here you won't regret it.",
+            "languageCode": "en"
+          },
+          "authorAttribution": {
+            "displayName": "Sharon Ferguson",
+            "uri": "https://www.google.com/maps/contrib/116840999564166874644/reviews",
+            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX8SCcsBBnFWg7Ax71JUvHnZay1Cvd1yVqMd8dq0MEYhiHHPlM=s128-c0x00000000-cc-rp-mo-ba5"
+          },
+          "publishTime": "2026-03-03T21:20:34.165130511Z",
+          "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2psRlFXWlBNelY0ZGxSWmJYbFlkMmR2ZEdSWVZYYxAB&d=17924085&t=1",
+          "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2psRlFXWlBNelY0ZGxSWmJYbFlkMmR2ZEdSWVZYYxAB!2m1!1s0xa82b2352337c8bcb:0x25e9b528d82518e9"
+        },
+        {
+          "name": "places/ChIJy4t8M1IjK6gR6Rgl2Ci16SU/reviews/Ci9DQUlRQUNvZENodHljRjlvT21aUGRqTk9NMlI1VmprMGNFVjZjbk13WldoYWFFRRAB",
+          "relativePublishTimeDescription": "3 months ago",
+          "rating": 2,
+          "text": {
+            "text": "Food is over priced for the quality. I had the ham cheese tomato toasted croissant ($15).  It was only just warm. Cheese mostly not melted (what little cheese there was), overdosed with a very sweet tomato chutney.  Very tight with the quantity of fillings. This should be a $5 item, not $15.  Coffee was also not very warm but nice flavour.\nOutside seating is nice and location is great. Staff are friendly.....just the food is not good.",
+            "languageCode": "en"
+          },
+          "originalText": {
+            "text": "Food is over priced for the quality. I had the ham cheese tomato toasted croissant ($15).  It was only just warm. Cheese mostly not melted (what little cheese there was), overdosed with a very sweet tomato chutney.  Very tight with the quantity of fillings. This should be a $5 item, not $15.  Coffee was also not very warm but nice flavour.\nOutside seating is nice and location is great. Staff are friendly.....just the food is not good.",
+            "languageCode": "en"
+          },
+          "authorAttribution": {
+            "displayName": "Simon B",
+            "uri": "https://www.google.com/maps/contrib/113830347708639286580/reviews",
+            "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKpUphgqpvUFMa_iTcjYBxZo7hutY5dPoxIao4GfkiSxh2NcA=s128-c0x00000000-cc-rp-mo-ba2"
+          },
+          "publishTime": "2025-11-28T22:15:03.712085032Z",
+          "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT21aUGRqTk9NMlI1VmprMGNFVjZjbk13WldoYWFFRRAB&d=17924085&t=1",
+          "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21aUGRqTk9NMlI1VmprMGNFVjZjbk13WldoYWFFRRAB!2m1!1s0xa82b2352337c8bcb:0x25e9b528d82518e9"
+        },
+        {
+          "name": "places/ChIJy4t8M1IjK6gR6Rgl2Ci16SU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tKaVRtTk5lbE40UjB4T01EUlZOblZWTW5kVFIxRRAB",
+          "relativePublishTimeDescription": "a month ago",
+          "rating": 4,
+          "text": {
+            "text": "Great Southern cheese rolls and a great place to fill up the water bottles on a hot day!",
+            "languageCode": "en"
+          },
+          "originalText": {
+            "text": "Great Southern cheese rolls and a great place to fill up the water bottles on a hot day!",
+            "languageCode": "en"
+          },
+          "authorAttribution": {
+            "displayName": "David Bailey",
+            "uri": "https://www.google.com/maps/contrib/113549663718870652864/reviews",
+            "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWdg4YigPxr8keQ1rGdPy5tJUNcoyuRJ92x2ejwwnX5SNuzAaA=s128-c0x00000000-cc-rp-mo"
+          },
+          "publishTime": "2026-02-12T00:27:12.012159220Z",
+          "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2tKaVRtTk5lbE40UjB4T01EUlZOblZWTW5kVFIxRRAB&d=17924085&t=1",
+          "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tKaVRtTk5lbE40UjB4T01EUlZOblZWTW5kVFIxRRAB!2m1!1s0xa82b2352337c8bcb:0x25e9b528d82518e9"
+        }
+      ]
+    }
+  ]
+}

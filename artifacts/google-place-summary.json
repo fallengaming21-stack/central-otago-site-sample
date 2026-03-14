@@ -1,0 +1,48 @@
+{
+  "id": "ChIJy4t8M1IjK6gR6Rgl2Ci16SU",
+  "name": "Tin Goose Cafe",
+  "address": "22 Centennial Avenue, Alexandra 9320, New Zealand",
+  "rating": 4.5,
+  "userRatingCount": 506,
+  "type": "Cafe",
+  "phone": "03 448 5995",
+  "website": null,
+  "maps": "https://maps.google.com/?cid=2731913836006545641&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "hours": [
+    "Monday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM",
+    "Tuesday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM",
+    "Wednesday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM",
+    "Thursday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM",
+    "Friday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM",
+    "Saturday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM",
+    "Sunday: 6:00\u202fAM\u2009\u2013\u20094:00\u202fPM"
+  ],
+  "editorial": null,
+  "reviews": [
+    {
+      "rating": 5,
+      "text": "Beautiful.\n\nA modern expression of Alex, which is cultured by the people who live here.\n\nScandi vibes, but without the extremes of minimalism.\n\nComfortable, spacious and clean.\n\nPrices are very fair.\n\nThe team I witnessed are dedicated to serving and meeting the needs of their cu",
+      "author": "Enoch YHVH"
+    },
+    {
+      "rating": 5,
+      "text": "This caf\u00e9 was a lovely surprise on our way to Dunedin. It\u2019s one of the few places open so early, and I was really impressed with the quality in every way.\n\nThe interior is cozy and beautifully decorated, and the staff were warm and welcoming \u263a\ufe0f\n\nI really appreciated being asked h",
+      "author": "Jennifer"
+    },
+    {
+      "rating": 5,
+      "text": "This place is always busy when we pass so decided to stop and we are pleased we did. Our coffee and scone were delicious and the service was amazing, within 10 minutes of ordering we had both in front of us. Stop here you won't regret it.",
+      "author": "Sharon Ferguson"
+    },
+    {
+      "rating": 2,
+      "text": "Food is over priced for the quality. I had the ham cheese tomato toasted croissant ($15).  It was only just warm. Cheese mostly not melted (what little cheese there was), overdosed with a very sweet tomato chutney.  Very tight with the quantity of fillings. This should be a $5 it",
+      "author": "Simon B"
+    },
+    {
+      "rating": 4,
+      "text": "Great Southern cheese rolls and a great place to fill up the water bottles on a hot day!",
+      "author": "David Bailey"
+    }
+  ]
+}
