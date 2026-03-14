@@ -17,95 +17,60 @@
       --line:#1e2d49;
       --brand:#ff6b35;
       --brand-dark:#e75a28;
-      --ok:#2dd4bf;
+      --accent:#60a5fa;
       --max:1120px;
       --radius:16px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      color:var(--text);
-      background:var(--bg);
-      line-height:1.55;
-    }
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.55;overflow-x:hidden}
     .container{width:min(var(--max),92%);margin-inline:auto}
 
-    /* Top nav */
-    .nav-wrap{
-      position:sticky; top:0; z-index:50;
-      background:rgba(7,16,29,.9);
-      border-bottom:1px solid rgba(255,255,255,.08);
-      backdrop-filter:blur(8px);
-    }
+    .bg-blobs{position:fixed;inset:0;pointer-events:none;z-index:-1;overflow:hidden}
+    .blob{position:absolute;border-radius:999px;filter:blur(50px);opacity:.22;animation:float 13s ease-in-out infinite}
+    .blob.a{width:340px;height:340px;background:#2563eb;left:-80px;top:8%}
+    .blob.b{width:300px;height:300px;background:#f97316;right:-70px;top:35%;animation-delay:2s}
+    .blob.c{width:280px;height:280px;background:#14b8a6;left:30%;bottom:-90px;animation-delay:4s}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-24px)}}
+
+    .nav-wrap{position:sticky;top:0;z-index:50;background:rgba(7,16,29,.78);border-bottom:1px solid rgba(255,255,255,.08);backdrop-filter:blur(10px)}
     nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
-    .brand-mark{
-      width:34px;height:34px;border-radius:9px;
-      background:linear-gradient(145deg,var(--brand),#ff915f);
-      display:grid;place-items:center;color:#1d0a02;font-weight:900
-    }
+    .brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.2px}
+    .brand-logo{width:42px;height:42px}
+    .brand-logo svg{display:block;width:100%;height:100%;filter:drop-shadow(0 6px 20px rgba(96,165,250,.35))}
     .brand small{display:block;color:var(--muted);font-weight:600;font-size:12px;letter-spacing:.4px}
     .menu{display:flex;align-items:center;gap:20px}
-    .menu a{color:#dce8ff;text-decoration:none;font-weight:600;font-size:14px}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:8px;
-      background:var(--brand);color:#fff;text-decoration:none;font-weight:700;
-      padding:12px 18px;border-radius:12px;border:1px solid transparent;
-      transition:.2s ease;
-    }
-    .btn:hover{background:var(--brand-dark)}
+    .menu a{color:#dce8ff;text-decoration:none;font-weight:600;font-size:14px;position:relative}
+    .menu a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:linear-gradient(90deg,var(--brand),var(--accent));transition:width .25s}
+    .menu a:not(.btn):hover::after{width:100%}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--brand);color:#fff;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:12px;border:1px solid transparent;transition:.2s ease}
+    .btn:hover{background:var(--brand-dark);transform:translateY(-1px)}
     .btn.ghost{background:transparent;border-color:#ff8c66;color:#ffd5c7}
 
-    /* Hero */
-    .hero{
-      position:relative;
-      min-height:84svh;
-      display:grid;
-      align-items:center;
-      isolation:isolate;
-      border-bottom:1px solid rgba(255,255,255,.08);
-      background:
-        linear-gradient(90deg, rgba(4,10,20,.88) 0%, rgba(4,10,20,.65) 45%, rgba(4,10,20,.35) 100%),
-        url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
-    }
-    .hero-inner{padding:72px 0}
-    .rating{display:inline-flex;align-items:center;gap:8px;color:#ffd7c8;font-weight:600;font-size:14px}
+    .hero{position:relative;min-height:86svh;display:grid;align-items:center;isolation:isolate;border-bottom:1px solid rgba(255,255,255,.08);background:linear-gradient(95deg, rgba(3,8,17,.9) 0%, rgba(3,8,17,.62) 45%, rgba(3,8,17,.26) 100%), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1800&auto=format&fit=crop') center/cover no-repeat;background-position:center calc(50% + var(--parallaxY, 0px));}
+    .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 30%, rgba(96,165,250,.22), transparent 40%),radial-gradient(circle at 75% 70%, rgba(249,115,22,.20), transparent 45%)}
+    .hero-inner{padding:84px 0;position:relative}
+    .rating{display:inline-flex;align-items:center;gap:8px;color:#ffd7c8;font-weight:600;font-size:14px;padding:8px 12px;border:1px solid rgba(255,255,255,.15);border-radius:999px;background:rgba(7,16,29,.45)}
     .stars{color:var(--brand);letter-spacing:2px}
-    h1{
-      font-size:clamp(2rem,6vw,4rem);
-      line-height:1.06;
-      margin:.35rem 0 .9rem;
-      max-width:760px;
-      letter-spacing:-.02em;
-    }
+    h1{font-size:clamp(2rem,6vw,4rem);line-height:1.04;margin:.45rem 0 .9rem;max-width:780px;letter-spacing:-.02em}
     .lead{max-width:660px;color:#d3def5;font-size:clamp(1rem,2vw,1.2rem)}
     .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
 
-    .stats{
-      margin-top:34px;
-      display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
-      gap:12px;max-width:660px
-    }
-    .stat{padding:14px 12px;border-top:1px solid rgba(255,255,255,.18)}
+    .stats{margin-top:34px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:700px}
+    .stat{padding:14px 12px;border-top:1px solid rgba(255,255,255,.22);backdrop-filter:blur(2px)}
     .stat b{display:block;font-size:1.6rem;color:#ff9b76}
     .stat span{font-size:14px;color:#bdd0ef}
 
-    /* Sections */
     section{padding:70px 0;border-bottom:1px solid rgba(255,255,255,.06)}
     .section-head{margin-bottom:20px}
     .eyebrow{color:#9ec0ff;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1.5px}
     h2{font-size:clamp(1.55rem,3.4vw,2.3rem);margin:.2rem 0 .5rem}
     .muted{color:var(--muted)}
-
     .grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-    .card{
-      background:linear-gradient(180deg,#0e1b30,#0b1526);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      padding:18px;
-    }
+
+    .card{background:linear-gradient(180deg,#0f1d34,#0b1526);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:0 12px 40px rgba(1,8,20,.22);transition:transform .25s,border-color .25s}
+    .card:hover{transform:translateY(-4px);border-color:#355487}
     .card h3{margin:.2rem 0 .35rem}
     .pill{display:inline-block;font-size:12px;color:#9cc2ff;background:#13213c;border:1px solid #26395e;padding:5px 9px;border-radius:999px}
 
@@ -121,33 +86,45 @@
     summary{cursor:pointer;font-weight:700}
     details p{margin:10px 0 0;color:#c9d7f2}
 
-    .cta-box{
-      background:radial-gradient(circle at 15% 20%, #223b66 0%, #0f1f3a 40%, #0b162a 100%);
-      border:1px solid #2a4168;
-      border-radius:20px;
-      padding:28px;
-      display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;
-    }
-
+    .cta-box{background:radial-gradient(circle at 15% 20%, #223b66 0%, #0f1f3a 40%, #0b162a 100%);border:1px solid #2a4168;border-radius:20px;padding:28px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px}
     footer{padding:26px 0;color:#99afd3;font-size:14px}
 
-    @media (max-width:980px){
-      .grid-3,.reviews{grid-template-columns:1fr 1fr}
-      .about{grid-template-columns:1fr}
-      .menu a:not(.btn){display:none}
+    .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+    .reveal.show{opacity:1;transform:translateY(0)}
+
+    @media (prefers-reduced-motion: reduce){
+      .blob,.reveal,.btn,.card{animation:none;transition:none}
+      html{scroll-behavior:auto}
     }
-    @media (max-width:640px){
-      .stats,.grid-3,.reviews{grid-template-columns:1fr}
-      .hero{min-height:78svh}
-      nav{padding:10px 0}
-    }
+    @media (max-width:980px){.grid-3,.reviews{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.menu a:not(.btn){display:none}}
+    @media (max-width:640px){.stats,.grid-3,.reviews{grid-template-columns:1fr}.hero{min-height:80svh}nav{padding:10px 0}}
   </style>
 </head>
 <body>
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob a"></div>
+    <div class="blob b"></div>
+    <div class="blob c"></div>
+  </div>
+
   <div class="nav-wrap">
     <nav class="container">
       <div class="brand">
-        <span class="brand-mark">CO</span>
+        <span class="brand-logo" aria-hidden="true">
+          <!-- AI-style generated geometric mark -->
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#60a5fa"/>
+                <stop offset="50%" stop-color="#22d3ee"/>
+                <stop offset="100%" stop-color="#fb923c"/>
+              </linearGradient>
+            </defs>
+            <rect x="7" y="7" width="86" height="86" rx="22" fill="url(#g1)"/>
+            <path d="M29 65c6-16 15-28 29-36" stroke="#041327" stroke-width="10" stroke-linecap="round" fill="none"/>
+            <path d="M62 26c10 0 16 8 16 17 0 11-8 20-23 20h-8" stroke="#041327" stroke-width="10" stroke-linecap="round" fill="none"/>
+          </svg>
+        </span>
         <div>
           Central Otago Plumbing Co.
           <small>Local • Reliable • Same Day</small>
@@ -163,8 +140,8 @@
     </nav>
   </div>
 
-  <header class="hero">
-    <div class="container hero-inner">
+  <header class="hero" id="top">
+    <div class="container hero-inner reveal">
       <div class="rating"><span class="stars">★★★★★</span> 5.0 from 47 Google reviews</div>
       <h1>Professional Plumbing Service for Homes That Need It Done Right</h1>
       <p class="lead">Fast callouts, honest advice, and workmanship that lasts. We service Alexandra, Cromwell, Clyde and surrounds.</p>
@@ -180,7 +157,7 @@
     </div>
   </header>
 
-  <section id="services">
+  <section id="services" class="reveal">
     <div class="container">
       <div class="section-head">
         <div class="eyebrow">Services</div>
@@ -195,7 +172,7 @@
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" class="reveal">
     <div class="container about">
       <div class="card">
         <div class="eyebrow">About</div>
@@ -218,7 +195,7 @@
     </div>
   </section>
 
-  <section id="reviews">
+  <section id="reviews" class="reveal">
     <div class="container">
       <div class="section-head">
         <div class="eyebrow">Reviews</div>
@@ -232,7 +209,7 @@
     </div>
   </section>
 
-  <section id="faq">
+  <section id="faq" class="reveal">
     <div class="container">
       <div class="section-head">
         <div class="eyebrow">FAQ</div>
@@ -253,7 +230,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="reveal">
     <div class="container">
       <div class="cta-box">
         <div>
@@ -267,11 +244,30 @@
   </section>
 
   <footer>
-    <div class="container">© <span id="year"></span> Central Otago Plumbing Co. • Sample conversion-focused one-page site.</div>
+    <div class="container">© <span id="year"></span> Central Otago Plumbing Co. • Premium animated one-page sample.</div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const revealEls = [...document.querySelectorAll('.reveal')];
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+    revealEls.forEach(el => io.observe(el));
+
+    const hero = document.querySelector('.hero');
+    const onScroll = () => {
+      const y = Math.min(window.scrollY * 0.18, 70);
+      hero.style.setProperty('--parallaxY', `${y}px`);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
   </script>
 </body>
 </html>
