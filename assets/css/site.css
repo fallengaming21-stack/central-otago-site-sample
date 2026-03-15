@@ -1,0 +1,26 @@
+:root{--bg:#081427;--panel:#0f1d34;--ink:#ecf3ff;--muted:#a9bad7;--line:rgba(255,255,255,.14);--accent:#6eb6ff;--accent2:#82ffd9;--mx:.5;--my:.4}
+*{box-sizing:border-box}html,body{margin:0}body{font-family:'Sora',system-ui,sans-serif;background:radial-gradient(1200px 700px at calc(var(--mx)*100%) calc(var(--my)*100%), color-mix(in srgb,var(--accent) 20%, transparent), transparent),var(--bg);color:var(--ink);line-height:1.55;min-height:100vh}
+.bg-noise{position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:radial-gradient(rgba(255,255,255,.13) .8px, transparent .8px);background-size:3px 3px;mix-blend-mode:soft-light}
+.wrap{max-width:1120px;margin:0 auto;padding:24px 20px 96px}
+.shell{border:1px solid var(--line);background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border-radius:20px;padding:22px;margin-bottom:14px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.09);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+h1,h2,h3{margin:0 0 10px;line-height:1.08}h1{font-family:'Instrument Serif',serif;font-size:clamp(36px,6vw,68px);font-weight:400;letter-spacing:.01em}
+h2{font-size:clamp(24px,3vw,34px)}
+.lede,.muted,p{color:var(--muted)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:stretch}
+.hero-art{position:relative;min-height:280px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(130deg,rgba(255,255,255,.03),rgba(255,255,255,.01))}
+.orb{position:absolute;inset:auto -90px -100px auto;width:330px;height:330px;background:radial-gradient(circle at 40% 35%,var(--accent2),transparent 62%),radial-gradient(circle at 60% 60%,var(--accent),transparent 70%);filter:blur(8px);opacity:.7}
+.gridline{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:28px 28px;mask:linear-gradient(transparent,black 20%,black 80%,transparent)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.btn{text-decoration:none;font-weight:700;padding:11px 15px;border-radius:10px;display:inline-block}.btn-main{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#031523}.btn-alt{color:var(--ink);border:1px solid var(--line)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.chips span{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:rgba(255,255,255,.04)}
+.cards{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));display:grid;gap:10px}.card{border:1px solid var(--line);border-radius:14px;padding:14px;background:rgba(255,255,255,.03)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:10px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}.panel{border:1px solid var(--line);border-radius:14px;padding:14px;background:rgba(255,255,255,.03)}
+.keywords{font-family:'Instrument Serif',serif;font-size:28px;color:var(--ink)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stats div{border:1px solid var(--line);border-radius:12px;padding:10px;background:rgba(255,255,255,.03)}.stats strong{display:block;font-size:20px}.stats span{font-size:12px;color:var(--muted)}
+.quote-rail .quote-card{display:none}.quote-rail .quote-card.active{display:block;animation:fade .5s ease}
+.faq-grid{display:grid;gap:10px}details{border:1px solid var(--line);border-radius:12px;padding:12px;background:rgba(255,255,255,.03)}summary{cursor:pointer;font-weight:600}
+.mobile-cta{position:fixed;left:14px;right:14px;bottom:14px;z-index:50;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#041422;text-decoration:none;padding:13px 16px;border-radius:12px;font-weight:800;text-align:center;transform:translateY(110%);transition:transform .25s ease}.mobile-cta.show{transform:translateY(0)}
+[data-reveal]{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}[data-reveal].is-in{opacity:1;transform:translateY(0)}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (max-width:900px){.hero,.split{grid-template-columns:1fr}.section-head{display:block}.wrap{padding-bottom:110px}}

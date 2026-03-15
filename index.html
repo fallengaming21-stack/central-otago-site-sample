@@ -1,88 +1,40 @@
 <!doctype html>
-<html lang="en-NZ"> 
+<html lang="en-NZ">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tech2u Mobile Mechanic Ltd | Mechanic Queenstown</title>
-  <meta name="description" content="Tech2u Mobile Mechanic Ltd in Queenstown. Diagnostics & servicing, wof prep & safety checks, and more. Call 0210 625 655 for bookings." />
-  <meta name="theme-color" content="#14161c" />
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <style>
-    :root{--bg:#14161c;--bg-soft:#232734;--ink:#f3f4f7;--muted:#bbc0cf;--brand:#ff6f5a;--brand-soft:#ff9c8e;--accent:#8fb0ff;--line:rgba(255,255,255,.12);}
-    *{box-sizing:border-box} body{margin:0;font-family:'Segoe UI',Inter,system-ui,sans-serif;background:radial-gradient(circle at 10% 0,var(--bg-soft),var(--bg));color:var(--ink);line-height:1.55;position:relative}
-    body::before{content:'';position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.03) 1px, transparent 1px);background-size:3px 3px;opacity:.2;mix-blend-mode:soft-light}
-    .topbar{position:sticky;top:0;z-index:40;background:rgba(0,0,0,.45);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-    .topbar .in{max-width:1120px;margin:auto;padding:10px 22px;display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:14px}
-    .wrap{max-width:1120px;margin:auto;padding:22px} h1,h2,h3{line-height:1.1;margin:0 0 12px} h1{font-size:clamp(30px,5vw,54px);letter-spacing:-.02em} p{margin:0 0 14px;color:var(--muted)}
-    .hero{padding:24px;border:1px solid var(--line);background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.01));border-radius:22px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
-    .hero-grid{display:grid;gap:14px;grid-template-columns:1.1fr .9fr;align-items:stretch}
-    .hero-visual{border:1px solid var(--line);border-radius:14px;min-height:260px;background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.02));background-size:cover;background-position:center}
-    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.08);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
-    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px} .btn{display:inline-block;padding:11px 15px;border-radius:10px;text-decoration:none;font-weight:700}
-    .btn-main{background:var(--brand);color:#082030} .btn-alt{border:1px solid var(--line);color:var(--ink)}
-    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px} .chip{font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--ink)}
-    .grid{display:grid;gap:12px;margin-top:18px} .services{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-    .card{padding:16px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03)} .quote p{font-style:italic;color:var(--ink)}
-    .split{display:grid;gap:12px;grid-template-columns:1.1fr .9fr;margin-top:16px} .kv{font-size:14px}
-    .gallery{display:grid;gap:10px;grid-template-columns:repeat(3,1fr);margin-top:10px}
-    .tile{margin:0} .tile img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
-    .proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
-    .proof{border:1px solid var(--line);border-radius:12px;padding:12px;background:rgba(255,255,255,.04)}
-    .proof strong{display:block;font-size:24px;color:var(--ink)} .proof span{font-size:13px;color:var(--muted)}
-    details{padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.03)} details+details{margin-top:10px} summary{cursor:pointer;font-weight:700}
-    .footer{padding:24px 0 36px;color:var(--muted);font-size:14px}
-    @media (max-width:860px){.split,.hero-grid{grid-template-columns:1fr}.gallery,.proof-grid{grid-template-columns:1fr}}
-  </style>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "AutoRepair", "name": "Tech2u Mobile Mechanic Ltd", "telephone": "0210 625 655", "address": {"@type": "PostalAddress", "streetAddress": "10 Shotover Street, Queenstown 9300, New Zealand", "addressLocality": "Queenstown", "addressCountry": "NZ"}, "areaServed": ["Central Otago", "Queenstown Lakes"], "url": "https://maps.google.com/?cid=17246064466305905215&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA", "sameAs": ["https://maps.google.com/?cid=17246064466305905215&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"], "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "57"}}</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jarvis Premium Site Factory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
 </head>
-<body>
-  <div class="topbar"><div class="in"><span>Tech2u Mobile Mechanic Ltd · Queenstown</span><a class="btn btn-main" href="tel:+64210625655">Call now</a></div></div>
-  <main class="wrap"> 
-    <section class="hero">
-      <div class="hero-grid">
-        <div>
-          <span class="badge">Mechanic · Queenstown</span>
-          <h1>Tech2u Mobile Mechanic Ltd</h1>
-          <p>Premium local mechanic support in Queenstown. Built around what customers value most: knowledgeable, reliable, responsive.</p>
-          <div class="chips"><span class='chip'>4.8★ from 57 Google reviews</span><span class='chip'>Local in Queenstown</span><span class='chip'>Same-day response focus</span></div>
-          <div class="actions">
-            <a class="btn btn-main" href="tel:+64210625655">Call 0210 625 655</a>
-            <a class="btn btn-alt" href="https://maps.google.com/?cid=17246064466305905215&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener noreferrer">Directions</a>
-          </div>
-        </div>
-        <div class='hero-visual' style="background-image:linear-gradient(145deg,rgba(0,0,0,.28),rgba(0,0,0,.38)),url('assets/photos/image-1.png');"></div>
-      </div>
-      <div class="grid services"><article class='card'><h3>Diagnostics & servicing</h3><p>Tech2u Mobile Mechanic Ltd delivers this across Queenstown and nearby areas.</p></article><article class='card'><h3>WOF prep & safety checks</h3><p>Tech2u Mobile Mechanic Ltd delivers this across Queenstown and nearby areas.</p></article><article class='card'><h3>Brakes, suspension, drivetrain</h3><p>Tech2u Mobile Mechanic Ltd delivers this across Queenstown and nearby areas.</p></article><article class='card'><h3>Fleet and daily-driver care</h3><p>Tech2u Mobile Mechanic Ltd delivers this across Queenstown and nearby areas.</p></article></div>
-      <div class="proof-grid"><article class='proof'><strong>57</strong><span>Google review proof</span></article><article class='proof'><strong>Fast</strong><span>Response-first booking flow</span></article><article class='proof'><strong>Local</strong><span>Service coverage with local knowledge</span></article></div>
-    </section>
-
-    <section class="split">
-      <article class="card">
-        <h2>Why customers choose Tech2u Mobile Mechanic Ltd</h2>
-        <p>Recent customer language trends: <strong>knowledgeable, reliable, responsive, professional</strong>.</p>
-        <p class="kv"><strong>Location:</strong> 10 Shotover Street, Queenstown 9300, New Zealand<br/><strong>Phone:</strong> 0210 625 655<br/><strong>Category:</strong> Mechanic</p>
-      </article>
-      <article class="card">
-        <h2>Customer feedback</h2>
-        <article class='card quote'><p>“Malcom was amaaaazing!!! I wish I could leave him 1000 stars on here, because he’s a star 🌟 Literal life saver and such a stellar human ❤️🥹 On my first call to him when I was st...”</p></article><article class='card quote'><p>“I can’t recommend Malcom and team enough! He is super knowledgeable - what I thought to be a big issue he quickly diagnosed and fixed it in no time and got my car back up and ru...”</p></article><article class='card quote'><p>“Malcom is a top bloke! Came to fix an issue with my work van on such short notice and also fixed another issue that was found. Also gave me extensive knowledge about mechanical...”</p></article>
-      </article>
-    </section>
-
-    <section class="card" style="margin-top:14px">
-      <h2>Service visuals</h2>
-      <div class="gallery"><figure class='tile'><img src='assets/photos/image-1.png' alt='Tech2u Mobile Mechanic Ltd service image 1' loading='lazy'/></figure><figure class='tile'><img src='assets/photos/image-2.png' alt='Tech2u Mobile Mechanic Ltd service image 2' loading='lazy'/></figure><figure class='tile'><img src='assets/photos/image-3.png' alt='Tech2u Mobile Mechanic Ltd service image 3' loading='lazy'/></figure></div>
-    </section>
-
-    <section class="card" style="margin-top:14px">
-      <h2>FAQs</h2>
-      <details><summary>Do you service all of Queenstown?</summary><p>Yes — Tech2u Mobile Mechanic Ltd supports jobs throughout Queenstown and surrounding areas.</p></details><details><summary>Can I call for urgent work?</summary><p>Call 0210 625 655 and the team will confirm the fastest available slot.</p></details><details><summary>Do you provide quotes?</summary><p>Yes — jobs are scoped clearly upfront so there are no surprises.</p></details>
-      <div class="actions" style="margin-top:16px">
-        <a class="btn btn-main" href="tel:+64210625655">Request a call back</a>
-        <a class="btn btn-alt" href="https://maps.google.com/?cid=17246064466305905215&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener noreferrer">Google Business Profile</a>
+<body style="--accent:#8ab5ff;--accent2:#88ffe0;--bg:#070f20">
+  <main class="wrap">
+    <section class="shell" data-reveal>
+      <span class="badge">Eleventy v2 · Premium</span>
+      <h1>Jarvis Site Factory</h1>
+      <p class="lede">High-conversion, premium-grade local service websites generated from lead and review signals.</p>
+      <div class="stats" style="margin-top:10px">
+        <div><strong>1</strong><span>sites in batch</span></div>
+        <div><strong>Eleventy</strong><span>component architecture</span></div>
+        <div><strong>JS UX</strong><span>progressive enhancement</span></div>
       </div>
     </section>
 
-    <div class="footer">Tech2u Mobile Mechanic Ltd · Queenstown · 0210 625 655</div>
+    <section class="shell" data-reveal>
+      <h2>Business pages</h2>
+      <div class="cards">
+        
+        <a class="card" href="/tech2u-mobile-mechanic-ltd/" style="text-decoration:none;color:inherit">
+          <strong>Tech2u Mobile Mechanic Ltd</strong>
+          <p class="muted">Mechanic · Queenstown</p>
+          <p class="muted">4.8★ from 57 Google reviews</p>
+        </a>
+        
+      </div>
+    </section>
   </main>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>
