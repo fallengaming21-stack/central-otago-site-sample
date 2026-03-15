@@ -1,6 +1,7 @@
 :root{--bg:#081427;--panel:#0f1d34;--ink:#ecf3ff;--muted:#a9bad7;--line:rgba(255,255,255,.14);--accent:#6eb6ff;--accent2:#82ffd9;--mx:.5;--my:.4}
 *{box-sizing:border-box}html,body{margin:0}body{font-family:'Manrope',system-ui,sans-serif;background:radial-gradient(1200px 700px at calc(var(--mx)*100%) calc(var(--my)*100%), color-mix(in srgb,var(--accent) 24%, transparent), transparent),var(--bg);color:var(--ink);line-height:1.55;min-height:100vh}
 .topbar{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);background:rgba(2,8,20,.55);border-bottom:1px solid var(--line)}.topbar-inner{max-width:1180px;margin:0 auto;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand-mark{display:flex;align-items:center}.brand-mark svg{height:38px;width:auto;color:var(--ink)}
 .wrap{max-width:1180px;margin:0 auto;padding:18px 20px 96px}
 .shell{border:1px solid var(--line);background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border-radius:20px;padding:22px;margin-bottom:14px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
 .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.09);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
