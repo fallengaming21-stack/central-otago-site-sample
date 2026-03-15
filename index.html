@@ -1,665 +1,88 @@
 <!doctype html>
-<html lang="en-NZ">
+<html lang="en-NZ"> 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tech2u Mobile Mechanic Ltd | Mechanic Queenstown</title>
+  <meta name="description" content="Tech2u Mobile Mechanic Ltd in Queenstown. Diagnostics & servicing, wof prep & safety checks, and more. Call 0210 625 655 for bookings." />
+  <meta name="theme-color" content="#14161c" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <title>Tin Goose Cafe Alexandra NZ | Coffee, Brunch & Cafe Hours</title>
-  <meta name="description" content="Tin Goose Cafe in Alexandra, NZ — coffee, brunch, cabinet food, and friendly local service. Open daily 6:00am–4:00pm. Call 03 448 5995." />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-  <link rel="canonical" href="https://fallengaming21-stack.github.io/central-otago-site-sample/" />
-  <meta property="og:title" content="Tin Goose Cafe Alexandra NZ | Coffee, Brunch & Cafe Hours" />
-  <meta property="og:description" content="Modern Alexandra cafe with 4.5★ from 506+ ratings. Coffee, brunch, and friendly local service." />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Tin Goose Cafe" />
-  <meta property="og:locale" content="en_NZ" />
-  <meta property="og:url" content="https://fallengaming21-stack.github.io/central-otago-site-sample/" />
-  <meta property="og:image" content="https://fallengaming21-stack.github.io/central-otago-site-sample/assets/photos/hero.webp" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Tin Goose Cafe Alexandra NZ" />
-  <meta name="twitter:description" content="Coffee, brunch, and casual dining in Alexandra." />
-  <meta name="twitter:image" content="https://fallengaming21-stack.github.io/central-otago-site-sample/assets/photos/hero.webp" />
-  <meta name="theme-color" content="#2F211A" />
-  <link rel="preload" as="image" href="assets/photos/cabinet.webp" />
-
   <style>
-    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
-    .skip-link:focus{left:12px;top:12px;width:auto;height:auto;padding:10px 14px;background:#fff;color:#111;border-radius:8px;z-index:999}
-    :root {
-      --primary: #2F211A;
-      --primary-deep: #241913;
-      --bg-cream: #F7F2EA;
-      --surface: #E9DDCF;
-      --taupe: #B9A999;
-      --text-secondary: #6E6257;
-      --text-high: #1F1B18;
-      --accent: #B5793E;
-      --accent-soft: #D5A66D;
-      --success: #3F6B57;
-
-      --radius-sm: 8px;
-      --radius-md: 12px;
-      --radius-lg: 20px;
-      --radius-hero: 28px;
-      --content-width: 1120px;
-
-      --ease-standard: cubic-bezier(0.22, 0.61, 0.36, 1);
-      --shadow-desktop: 0 14px 34px rgba(31, 27, 24, 0.12);
-    }
-
-    * { box-sizing: border-box; }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg-cream);
-      color: var(--text-high);
-      font-family: "Inter", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.6;
-      scroll-behavior: smooth;
-    }
-
-    img { max-width: 100%; display: block; }
-
-    .container {
-      width: min(var(--content-width), calc(100% - 40px));
-      margin: 0 auto;
-    }
-
-    section { padding: 48px 0; }
-
-    h1, h2, h3 {
-      margin: 0 0 16px;
-      color: var(--text-high);
-      font-family: "Cormorant Garamond", "Iowan Old Style", "Times New Roman", serif;
-      font-weight: 500;
-      line-height: 1.15;
-    }
-
-    h1 { font-size: clamp(1.85rem, 4.2vw, 2.35rem); letter-spacing: -0.01em; }
-    h2 { font-size: clamp(1.75rem, 4.2vw, 2.15rem); }
-    h3 { font-size: clamp(1.25rem, 3vw, 1.5rem); }
-
-    p { margin: 0 0 16px; color: var(--text-secondary); }
-
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 12px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: rgba(181, 121, 62, 0.14);
-      color: var(--primary);
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-    }
-
-    .btn-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 20px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 44px;
-      padding: 10px 18px;
-      border-radius: 10px;
-      border: 1.5px solid transparent;
-      text-decoration: none;
-      font-weight: 600;
-      transition: transform 180ms var(--ease-standard), background-color 220ms var(--ease-standard), color 220ms var(--ease-standard), border-color 220ms var(--ease-standard);
-    }
-
-    .btn:focus-visible {
-      outline: 3px solid var(--accent-soft);
-      outline-offset: 2px;
-    }
-
-    a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
-      outline: 3px solid var(--accent-soft);
-      outline-offset: 2px;
-      border-radius: 8px;
-    }
-
-    .btn-primary {
-      background: var(--primary);
-      color: var(--bg-cream);
-    }
-
-    .btn-primary:hover { background: var(--primary-deep); transform: translateY(-1px); }
-
-    .btn-secondary {
-      border-color: var(--primary);
-      color: var(--primary);
-      background: transparent;
-    }
-
-    .btn-secondary:hover { background: rgba(47,33,26,0.06); transform: translateY(-1px); }
-
-    .hero {
-      padding-top: 18px;
-      min-height: auto;
-      background: linear-gradient(180deg, #f8f2e8 0%, #f7f2ea 60%, #f3ebe1 100%);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-grid {
-      display: grid;
-      gap: 14px;
-      align-items: center;
-    }
-
-    .hero-card {
-      background: rgba(255,255,255,0.62);
-      border: 1px solid rgba(47,33,26,0.16);
-      border-radius: var(--radius-hero);
-      padding: 18px;
-      backdrop-filter: blur(3px);
-      box-shadow: 0 18px 40px rgba(31,27,24,.14);
-    }
-
-    .rating-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: rgba(181, 121, 62, 0.16);
-      color: var(--primary);
-      font-weight: 600;
-      font-size: 14px;
-    }
-
-    .hero-visual {
-      aspect-ratio: 4 / 3;
-      position: relative;
-      border-radius: var(--radius-hero);
-      border: 1px solid rgba(47,33,26,0.14);
-      background:
-        radial-gradient(circle at 20% 20%, rgba(213,166,109,0.35), transparent 38%),
-        radial-gradient(circle at 70% 70%, rgba(47,33,26,0.15), transparent 42%),
-        linear-gradient(145deg, #f2e7d8, #ddc7af);
-      display: grid;
-      place-items: center;
-      color: var(--primary);
-      text-align: center;
-      padding: 20px;
-    }
-
-    .hero-visual small { color: #f2e8dc; font-size: 14px; }
-
-    .proof-strip {
-      background: linear-gradient(180deg, #ece2d6, #e7dacb);
-      border-top: 1px solid rgba(47,33,26,0.14);
-      border-bottom: 1px solid rgba(47,33,26,0.14);
-    }
-
-    .proof-items {
-      display: grid;
-      gap: 12px;
-      text-align: center;
-    }
-
-    .proof-item {
-      padding: 13px 12px;
-      border-radius: var(--radius-sm);
-      background: rgba(255,255,255,0.55);
-      border: 1px solid rgba(47,33,26,0.1);
-      color: var(--primary);
-      font-weight: 600;
-    }
-
-    .grid-3, .grid-4 {
-      display: grid;
-      gap: 16px;
-    }
-
-    .card {
-      background: linear-gradient(180deg, #faf5ee, #f6efe5);
-      border: 1px solid rgba(47,33,26,0.14);
-      border-radius: var(--radius-md);
-      padding: 20px;
-    }
-
-    .icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background: rgba(181,121,62,0.18);
-      color: var(--primary);
-      display: inline-grid;
-      place-items: center;
-      font-size: 18px;
-      margin-bottom: 12px;
-    }
-
-    .gallery-grid {
-      display: grid;
-      gap: 12px;
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .gallery-tile {
-      aspect-ratio: 4 / 3;
-      border-radius: 16px;
-      border: 1px solid rgba(47,33,26,0.14);
-      background: linear-gradient(135deg, #ead8c3, #d8bea2);
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 6px 16px rgba(31,27,24,.10);
-    }
-
-    .gallery-photo{
-      position:absolute;
-      inset:0;
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      object-position:center;
-      border-radius:14px;
-      filter:saturate(1.05) contrast(1.03);
-      transition: transform 260ms var(--ease-standard), filter 260ms var(--ease-standard);
-    }
-
-    .gallery-tile:hover .gallery-photo{
-      transform: scale(1.03);
-      filter:saturate(1.1) contrast(1.05);
-    }
-
-    .visit-grid {
-      display: grid;
-      gap: 16px;
-    }
-
-    .map-placeholder {
-      min-height: 220px;
-      border-radius: var(--radius-lg);
-      border: 1px dashed rgba(47,33,26,0.35);
-      background: rgba(255,255,255,0.5);
-      display: grid;
-      place-items: center;
-      text-align: center;
-      padding: 20px;
-      color: var(--text-secondary);
-    }
-
-    details {
-      border: 1px solid rgba(47,33,26,0.14);
-      background: #fbf7f1;
-      border-radius: var(--radius-sm);
-      padding: 14px 16px;
-    }
-
-    details + details { margin-top: 12px; }
-
-    summary {
-      cursor: pointer;
-      font-weight: 600;
-      color: var(--primary);
-    }
-
-    .final-cta {
-      background: var(--primary);
-      color: var(--bg-cream);
-      border-radius: var(--radius-lg);
-      padding: 28px;
-      border: 1px solid rgba(47,33,26,0.14);
-    }
-
-    .final-cta p, .final-cta h2 { color: var(--bg-cream); }
-
-    footer {
-      border-top: 1px solid rgba(47,33,26,0.14);
-      padding: 28px 0 40px;
-      color: var(--text-secondary);
-      font-size: 14px;
-    }
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(12px);
-      transition: opacity 420ms var(--ease-standard), transform 420ms var(--ease-standard);
-      will-change: opacity, transform;
-    }
-
-    .reveal.in {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    
-    .mobile-cta{position:fixed;left:10px;right:10px;bottom:max(10px, env(safe-area-inset-bottom));z-index:90;display:none;gap:10px;background:rgba(7,18,35,.92);border:1px solid rgba(255,255,255,.15);padding:10px;border-radius:12px;backdrop-filter:blur(6px)}
-    .mobile-cta a{flex:1;text-align:center;padding:11px 10px;border-radius:10px;font-weight:700;text-decoration:none}
-    .mobile-cta .call{background:var(--brand);color:#fff}
-    .mobile-cta .dir{background:#fff;color:#1f1b18}
-
-    @media (max-width: 720px){ .mobile-cta{display:flex;} body{padding-bottom:76px;} }
-
-    @media (min-width: 700px) {
-      section { padding: 56px 0; }
-      .container { width: min(var(--content-width), calc(100% - 56px)); }
-      .proof-items { grid-template-columns: repeat(3, 1fr); }
-      .grid-3 { grid-template-columns: repeat(3, 1fr); }
-      .grid-4 { grid-template-columns: repeat(2, 1fr); }
-      .hero-grid { grid-template-columns: 1.05fr 0.95fr; }
-      .visit-grid { grid-template-columns: 1fr 1fr; }
-      .gallery-grid { grid-template-columns: repeat(3, 1fr); }
-    }
-
-    @media (min-width: 1000px) {
-      section { padding: 68px 0; }
-      .container { width: min(var(--content-width), calc(100% - 80px)); }
-      .grid-4 { grid-template-columns: repeat(4, 1fr); }
-      .card:hover { transform: translateY(-2px); border-color: rgba(47,33,26,.24); }
-      .card { transition: transform 180ms var(--ease-standard), box-shadow 220ms var(--ease-standard), border-color 220ms var(--ease-standard); box-shadow: var(--shadow-desktop); }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      .reveal, .btn, .card { transition: none !important; }
-      .reveal { opacity: 1; transform: none; }
-    }
+    :root{--bg:#14161c;--bg-soft:#232734;--ink:#f3f4f7;--muted:#bbc0cf;--brand:#ff6f5a;--brand-soft:#ff9c8e;--accent:#8fb0ff;--line:rgba(255,255,255,.12);}
+    *{box-sizing:border-box} body{margin:0;font-family:'Segoe UI',Inter,system-ui,sans-serif;background:radial-gradient(circle at 10% 0,var(--bg-soft),var(--bg));color:var(--ink);line-height:1.55;position:relative}
+    body::before{content:'';position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.03) 1px, transparent 1px);background-size:3px 3px;opacity:.2;mix-blend-mode:soft-light}
+    .topbar{position:sticky;top:0;z-index:40;background:rgba(0,0,0,.45);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+    .topbar .in{max-width:1120px;margin:auto;padding:10px 22px;display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:14px}
+    .wrap{max-width:1120px;margin:auto;padding:22px} h1,h2,h3{line-height:1.1;margin:0 0 12px} h1{font-size:clamp(30px,5vw,54px);letter-spacing:-.02em} p{margin:0 0 14px;color:var(--muted)}
+    .hero{padding:24px;border:1px solid var(--line);background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.01));border-radius:22px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+    .hero-grid{display:grid;gap:14px;grid-template-columns:1.1fr .9fr;align-items:stretch}
+    .hero-visual{border:1px solid var(--line);border-radius:14px;min-height:260px;background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.02));background-size:cover;background-position:center}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.08);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px} .btn{display:inline-block;padding:11px 15px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn-main{background:var(--brand);color:#082030} .btn-alt{border:1px solid var(--line);color:var(--ink)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px} .chip{font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--ink)}
+    .grid{display:grid;gap:12px;margin-top:18px} .services{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card{padding:16px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03)} .quote p{font-style:italic;color:var(--ink)}
+    .split{display:grid;gap:12px;grid-template-columns:1.1fr .9fr;margin-top:16px} .kv{font-size:14px}
+    .gallery{display:grid;gap:10px;grid-template-columns:repeat(3,1fr);margin-top:10px}
+    .tile{margin:0} .tile img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
+    .proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+    .proof{border:1px solid var(--line);border-radius:12px;padding:12px;background:rgba(255,255,255,.04)}
+    .proof strong{display:block;font-size:24px;color:var(--ink)} .proof span{font-size:13px;color:var(--muted)}
+    details{padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.03)} details+details{margin-top:10px} summary{cursor:pointer;font-weight:700}
+    .footer{padding:24px 0 36px;color:var(--muted);font-size:14px}
+    @media (max-width:860px){.split,.hero-grid{grid-template-columns:1fr}.gallery,.proof-grid{grid-template-columns:1fr}}
   </style>
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CafeOrCoffeeShop",
-  "name": "Tin Goose Cafe",
-  "telephone": "03 448 5995",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "22 Centennial Avenue",
-    "addressLocality": "Alexandra",
-    "postalCode": "9320",
-    "addressCountry": "NZ"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.5",
-    "reviewCount": "506"
-  },
-  "url": "https://fallengaming21-stack.github.io/central-otago-site-sample/",
-  "sameAs": [
-    "https://maps.google.com/?cid=2731913836006545641&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
-  ],
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Monday",
-      "opens": "6:00 AM",
-      "closes": "4:00 PM"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Tuesday",
-      "opens": "6:00 AM",
-      "closes": "4:00 PM"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Wednesday",
-      "opens": "6:00 AM",
-      "closes": "4:00 PM"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Thursday",
-      "opens": "6:00 AM",
-      "closes": "4:00 PM"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Friday",
-      "opens": "6:00 AM",
-      "closes": "4:00 PM"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Saturday",
-      "opens": "6:00 AM",
-      "closes": "4:00 PM"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Sunday",
-      "opens": "6:00 AM",
-      "closes": "4:00 PM"
-    }
-  ]
-}
-  </script>
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Where is Tin Goose Cafe located?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Tin Goose Cafe is at 22 Centennial Avenue, Alexandra, New Zealand."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I contact Tin Goose Cafe?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Call Tin Goose Cafe on 03 448 5995."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are Tin Goose Cafe opening hours?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Open daily from 6:00 AM to 4:00 PM."
-      }
-    }
-  ]
-}
-  </script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "AutoRepair", "name": "Tech2u Mobile Mechanic Ltd", "telephone": "0210 625 655", "address": {"@type": "PostalAddress", "streetAddress": "10 Shotover Street, Queenstown 9300, New Zealand", "addressLocality": "Queenstown", "addressCountry": "NZ"}, "areaServed": ["Central Otago", "Queenstown Lakes"], "url": "https://maps.google.com/?cid=17246064466305905215&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA", "sameAs": ["https://maps.google.com/?cid=17246064466305905215&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"], "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "57"}}</script>
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  
-  <nav class="top-nav" aria-label="Primary">
-    <div class="container" style="display:flex;gap:14px;flex-wrap:wrap;padding:10px 0">
-      <a href="#main-content">Skip to content</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#faq">FAQ</a>
-      <a href="tel:034485995">Call</a>
-      <a href="https://maps.google.com/?q=22+Centennial+Avenue+Alexandra+New+Zealand" target="_blank" rel="noopener noreferrer">Directions</a>
-    </div>
-  </nav>
-
-  <header class="hero">
-    <div class="container hero-grid">
-      <div class="hero-card reveal">
-        <span class="eyebrow">Tin Goose Cafe · Alexandra</span>
-        <h1>Tin Goose Cafe Alexandra — Premium Coffee, Brunch, and Local Favourites</h1>
-        <p>Tin Goose Cafe on Centennial Avenue is a go-to local spot for coffee catch-ups, relaxed breakfasts, and casual lunches — with the warm, welcoming feel you want in a neighbourhood café.</p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="https://maps.google.com/?q=22+Centennial+Avenue+Alexandra+New+Zealand" target="_blank" rel="noopener noreferrer" aria-label="Get directions to Tin Goose Cafe in Alexandra">Get Directions</a>
-          <a class="btn btn-secondary" href="tel:034485995" aria-label="Call Tin Goose Cafe on 03 448 5995">Call 03 448 5995</a>
-        </div>
-        <div class="rating-chip" aria-label="Google rating">⭐ Rated 4.5 on Google</div>
-      </div>
-      <div class="hero-visual reveal" role="img" aria-label="Tin Goose Cafe exterior concept image" style="background-image:linear-gradient(140deg, rgba(7,16,29,.10), rgba(7,16,29,.22)), url('assets/photos/exterior.webp'); background-size:cover; background-position:center;"></div>
-    </div>
-  </header>
-
-  <main id="main-content">
-  <section class="proof-strip" aria-label="Social proof">
-    <div class="container proof-items reveal">
-      <div class="proof-item">Rated 4.5 stars</div>
-      <div class="proof-item">22 Centennial Avenue, Alexandra</div>
-      <div class="proof-item">Category: Cafe</div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <span class="eyebrow reveal">Why Tin Goose</span>
-      <h2 class="reveal">A calm, quality-first cafe experience</h2>
-      <div class="grid-4">
-        <article class="card reveal">
-          <div class="icon" aria-hidden="true">☕</div>
-          <h3>Coffee Done Right</h3>
-          <p>Dependable quality from morning cup to afternoon pick-me-up in a relaxed local setting.</p>
-        </article>
-        <article class="card reveal">
-          <div class="icon" aria-hidden="true">🍳</div>
-          <h3>Breakfast & Brunch</h3>
-          <p>Simple, satisfying sit-down meals that suit catch-ups, family time, and easy mornings.</p>
-        </article>
-        <article class="card reveal">
-          <div class="icon" aria-hidden="true">🥗</div>
-          <h3>Casual Lunches</h3>
-          <p>Convenient midday dining for locals, workers nearby, and visitors passing through Alexandra.</p>
-        </article>
-        <article class="card reveal">
-          <div class="icon" aria-hidden="true">🙂</div>
-          <h3>Friendly Atmosphere</h3>
-          <p>A welcoming pace and true neighbourhood-cafe feel that people return to.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <span class="eyebrow reveal">Menu Highlights</span>
-      <h2 class="reveal">What to expect</h2>
-      <div class="grid-4">
-        <article class="card reveal"><h3>Coffee</h3><p>Well-reviewed coffee service from early morning, with fast turnaround even during busy periods.</p></article>
-        <article class="card reveal"><h3>Brunch</h3><p>Relaxed dine-in brunch options in a spacious, modern setting frequently praised for atmosphere.</p></article>
-        <article class="card reveal"><h3>Cabinet</h3><p>Popular quick picks mentioned by customers include house-style scones and Southern cheese rolls.</p></article>
-        <article class="card reveal"><h3>Bakery & Toasted Options</h3><p>Guests regularly mention fresh, comforting options like toasted croissants and cafe classics.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <span class="eyebrow reveal">Gallery</span>
-      <h2 class="reveal">Venue atmosphere</h2>
-      <div class="gallery-grid">
-        <div class="gallery-tile reveal"><img class="gallery-photo" src="assets/photos/hero.webp" alt="Cafe interior concept" loading="lazy"/></div>
-        <div class="gallery-tile reveal"><img class="gallery-photo" src="assets/photos/coffee.webp" alt="Coffee and pastry concept" loading="lazy"/></div>
-        <div class="gallery-tile reveal"><img class="gallery-photo" src="assets/photos/brunch.webp" alt="Brunch table concept" loading="lazy"/></div>
-        <div class="gallery-tile reveal"><img class="gallery-photo" src="assets/photos/exterior.webp" alt="Cafe exterior concept" loading="lazy"/></div>
-        <div class="gallery-tile reveal"><img class="gallery-photo" src="assets/photos/cabinet.webp" alt="Cabinet and counter concept" loading="lazy"/></div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <span class="eyebrow reveal">Visit Tin Goose</span>
-      <h2 class="reveal">Plan your stop</h2>
-      <div class="visit-grid">
-        <article class="card reveal">
-          <h3>High-intent details</h3>
-          <p><strong>Name:</strong> Tin Goose Cafe</p>
-          <p><strong>Category:</strong> Cafe</p>
-          <p><strong>Address:</strong> 22 Centennial Avenue, Alexandra</p>
-          <p><strong>Phone:</strong> <a href="tel:034485995" aria-label="Call Tin Goose Cafe on 03 448 5995">03 448 5995</a></p>
-          <p><strong>Opening hours:</strong> Mon–Sun: 6:00 AM – 4:00 PM</p>
-          <p><strong>Parking/access:</strong> On-street and nearby parking in central Alexandra (confirm best spots with staff).</p>
-          <div class="btn-row">
-            <a class="btn btn-primary" href="https://maps.google.com/?q=22+Centennial+Avenue+Alexandra+New+Zealand" target="_blank" rel="noopener noreferrer" aria-label="Open map directions to Tin Goose Cafe">Get Directions</a>
-            <a class="btn btn-secondary" href="tel:034485995" aria-label="Phone Tin Goose Cafe before visiting">Phone Ahead</a>
+  <div class="topbar"><div class="in"><span>Tech2u Mobile Mechanic Ltd · Queenstown</span><a class="btn btn-main" href="tel:+64210625655">Call now</a></div></div>
+  <main class="wrap"> 
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <span class="badge">Mechanic · Queenstown</span>
+          <h1>Tech2u Mobile Mechanic Ltd</h1>
+          <p>Premium local mechanic support in Queenstown. Built around what customers value most: knowledgeable, reliable, responsive.</p>
+          <div class="chips"><span class='chip'>4.8★ from 57 Google reviews</span><span class='chip'>Local in Queenstown</span><span class='chip'>Same-day response focus</span></div>
+          <div class="actions">
+            <a class="btn btn-main" href="tel:+64210625655">Call 0210 625 655</a>
+            <a class="btn btn-alt" href="https://maps.google.com/?cid=17246064466305905215&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener noreferrer">Directions</a>
           </div>
-        </article>
-        <aside class="map-placeholder reveal" aria-label="Map and review highlights" style="padding:0;overflow:hidden">
-          <iframe title="Tin Goose Cafe map" src="https://www.google.com/maps?q=22+Centennial+Avenue+Alexandra+9320&output=embed" style="width:100%;height:100%;min-height:260px;border:0"></iframe>
-        </aside>
+        </div>
+        <div class='hero-visual' style="background-image:linear-gradient(145deg,rgba(0,0,0,.28),rgba(0,0,0,.38)),url('assets/photos/image-1.png');"></div>
       </div>
-    </div>
-  </section>
+      <div class="grid services"><article class='card'><h3>Diagnostics & servicing</h3><p>Tech2u Mobile Mechanic Ltd delivers this across Queenstown and nearby areas.</p></article><article class='card'><h3>WOF prep & safety checks</h3><p>Tech2u Mobile Mechanic Ltd delivers this across Queenstown and nearby areas.</p></article><article class='card'><h3>Brakes, suspension, drivetrain</h3><p>Tech2u Mobile Mechanic Ltd delivers this across Queenstown and nearby areas.</p></article><article class='card'><h3>Fleet and daily-driver care</h3><p>Tech2u Mobile Mechanic Ltd delivers this across Queenstown and nearby areas.</p></article></div>
+      <div class="proof-grid"><article class='proof'><strong>57</strong><span>Google review proof</span></article><article class='proof'><strong>Fast</strong><span>Response-first booking flow</span></article><article class='proof'><strong>Local</strong><span>Service coverage with local knowledge</span></article></div>
+    </section>
 
+    <section class="split">
+      <article class="card">
+        <h2>Why customers choose Tech2u Mobile Mechanic Ltd</h2>
+        <p>Recent customer language trends: <strong>knowledgeable, reliable, responsive, professional</strong>.</p>
+        <p class="kv"><strong>Location:</strong> 10 Shotover Street, Queenstown 9300, New Zealand<br/><strong>Phone:</strong> 0210 625 655<br/><strong>Category:</strong> Mechanic</p>
+      </article>
+      <article class="card">
+        <h2>Customer feedback</h2>
+        <article class='card quote'><p>“Malcom was amaaaazing!!! I wish I could leave him 1000 stars on here, because he’s a star 🌟 Literal life saver and such a stellar human ❤️🥹 On my first call to him when I was st...”</p></article><article class='card quote'><p>“I can’t recommend Malcom and team enough! He is super knowledgeable - what I thought to be a big issue he quickly diagnosed and fixed it in no time and got my car back up and ru...”</p></article><article class='card quote'><p>“Malcom is a top bloke! Came to fix an issue with my work van on such short notice and also fixed another issue that was found. Also gave me extensive knowledge about mechanical...”</p></article>
+      </article>
+    </section>
 
-  <section>
-    <div class="container">
-      <span class="eyebrow reveal">FAQ</span>
-      <h2 class="reveal">Before you visit</h2>
-      <div class="reveal">
-        <details>
-          <summary>Where is Tin Goose Cafe located?</summary>
-          <p>Tin Goose Cafe is at <strong>22 Centennial Avenue, Alexandra</strong>.</p>
-        </details>
-        <details>
-          <summary>What kind of cafe is Tin Goose Cafe?</summary>
-          <p>It is a <strong>local cafe</strong> focused on coffee and casual dine-in experiences.</p>
-        </details>
-        <details>
-          <summary>How can I contact Tin Goose Cafe?</summary>
-          <p>You can call <a href="tel:034485995"><strong>03 448 5995</strong></a>.</p>
-        </details>
-        <details>
-          <summary>Does Tin Goose Cafe have a website?</summary>
-          <p>A website is not currently listed. For now, call directly or visit in person.</p>
-        </details>
-        <details>
-          <summary>Is Tin Goose Cafe highly rated?</summary>
-          <p>Tin Goose Cafe has a <strong>4.5 rating</strong>.</p>
-        </details>
+    <section class="card" style="margin-top:14px">
+      <h2>Service visuals</h2>
+      <div class="gallery"><figure class='tile'><img src='assets/photos/image-1.png' alt='Tech2u Mobile Mechanic Ltd service image 1' loading='lazy'/></figure><figure class='tile'><img src='assets/photos/image-2.png' alt='Tech2u Mobile Mechanic Ltd service image 2' loading='lazy'/></figure><figure class='tile'><img src='assets/photos/image-3.png' alt='Tech2u Mobile Mechanic Ltd service image 3' loading='lazy'/></figure></div>
+    </section>
+
+    <section class="card" style="margin-top:14px">
+      <h2>FAQs</h2>
+      <details><summary>Do you service all of Queenstown?</summary><p>Yes — Tech2u Mobile Mechanic Ltd supports jobs throughout Queenstown and surrounding areas.</p></details><details><summary>Can I call for urgent work?</summary><p>Call 0210 625 655 and the team will confirm the fastest available slot.</p></details><details><summary>Do you provide quotes?</summary><p>Yes — jobs are scoped clearly upfront so there are no surprises.</p></details>
+      <div class="actions" style="margin-top:16px">
+        <a class="btn btn-main" href="tel:+64210625655">Request a call back</a>
+        <a class="btn btn-alt" href="https://maps.google.com/?cid=17246064466305905215&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener noreferrer">Google Business Profile</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="container final-cta reveal">
-      <h2>Ready for your next coffee break in Alexandra?</h2>
-      <p>Conveniently located on Centennial Avenue — easy for locals, workers nearby, and travellers passing through town.</p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="https://maps.google.com/?q=22+Centennial+Avenue+Alexandra+New+Zealand" target="_blank" rel="noopener noreferrer" aria-label="Plan your visit to Tin Goose Cafe in Alexandra" style="background:#F7F2EA;color:#2F211A;">Plan Your Visit</a>
-        <a class="btn btn-secondary" href="tel:034485995" aria-label="Call Tin Goose Cafe now" style="border-color:#F7F2EA;color:#F7F2EA;">Call 03 448 5995</a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <strong>Tin Goose Cafe</strong><br />
-      22 Centennial Avenue, Alexandra · 03 448 5995<br />
-      Category: Cafe · Google rating: 4.5
-    </div>
-  </footer>
+    <div class="footer">Tech2u Mobile Mechanic Ltd · Queenstown · 0210 625 655</div>
   </main>
-
-  <script>
-    (function () {
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('in');
-            io.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-
-      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
-    })();
-  </script>
-
-  <div class="mobile-cta" aria-label="Quick actions">
-    <a class="call" href="tel:034485995" aria-label="Call Tin Goose Cafe">Call now</a>
-    <a class="dir" href="https://maps.google.com/?cid=2731913836006545641&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" aria-label="Open directions">Directions</a>
-  </div>
-
 </body>
 </html>
